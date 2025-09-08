@@ -18,7 +18,7 @@ const Cart = () => {
       );
       console.log(response);
 
-      setCart(response.data?.products ?? response.data?.item ?? []);
+      setCart(response.data?.products ?? response.data?.products ?? []);
     } catch (error) {
       console.error("Error fetching cart:", error);
       alert("Failed to load cart.");
@@ -30,7 +30,7 @@ const Cart = () => {
   //   console.log("cart:", cart);
   const removeFromCart = async (productId) => {
     try {
-      console.log("productId: ", productId);
+      // console.log("productId: ", productId);
       const response = await axios.delete(
         `${import.meta.env.VITE_URL}/product/deleteCartProduct/${productId}`,
         {
@@ -43,9 +43,9 @@ const Cart = () => {
 
       if (response.data.success) {
         // console.log("responsedelete: ", response);
-        setCart((prevCart) => {
-          prevCart.filter((item) => item._id !== productId);
-        });
+        setCart((prevCart) =>
+          prevCart.filter((item) => item._id !== productId)
+        );
         alert(response.data.message);
         fetchCart(); // refresh cart
       }
