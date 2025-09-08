@@ -1,12 +1,24 @@
-# React + Vite
+# 🛒 E-commerce Cart Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **_Note: You can signup for new credentials or check login credential_**
 
-Currently, two official plugins are available:
+## Login Credential
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+_username:- vishal_
 
-## Expanding the ESLint configuration
+_password:- 123456_
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+- JWT Auth used
+- Add/List products
+- Add products to cart
+- View cart
+- Remove product from cart
+
+## 📌 How to Use
+
+1. To list product Click on **Sell** button in navbar.
+2. To see products in cart click **Your Cart** icon in navbar.
+
+> **_Note: Only added product or newly listed product can be added to cart because other are dummy products which are not stored in database_**
